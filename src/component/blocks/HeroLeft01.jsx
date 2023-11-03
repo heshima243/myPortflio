@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import * as React from 'react';
 import Button from '@mui/joy/Button';
-import Link from '@mui/joy/Link';
+
 import Typography from '@mui/joy/Typography';
 import ArrowForward from '@mui/icons-material/ArrowForward';
 import TwoSidedLayout from '../TwoSidedLayout';
+import { Link } from 'react-router-dom';
 
 export default function HeroLeft01() {
   return (
@@ -26,7 +27,7 @@ export default function HeroLeft01() {
         Get Started
       </Button>
       <Typography>
-        Visit my Github <Link to='https://github.com/heshima243' _target='blank' fontWeight="lg">here</Link>
+        Visit my Github <Link style={{textDecoration:'none',color:'blue'}} to='https://github.com/heshima243' target='_blank' fontWeight="lg">here</Link>
       </Typography>
 
       {/* <Typography
