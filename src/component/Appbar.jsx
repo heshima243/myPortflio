@@ -45,7 +45,7 @@ export default function Appbar(props: Props) {
         PORTFLIO
       </Typography>
       <Divider />
-      <List sx={{backgroundColor: "#1a237e",color:'#fff',fontWeight:'bold'}}>
+      <List sx={{backgroundColor: "#37474f",color:'#fff',fontWeight:'bold'}}>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center",'&:hover':{backgroundColor:'#212121',transitionDelay:'0.3s'} }}>
@@ -63,7 +63,7 @@ export default function Appbar(props: Props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: "#282c34" }}>
+      <AppBar component="nav" sx={{ backgroundColor: "#37474f" }}>
         <Container>
           <Toolbar>
             <IconButton

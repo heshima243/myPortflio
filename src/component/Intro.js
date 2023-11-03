@@ -27,7 +27,7 @@ const Intro = () => {
   }, [charIndex]);
 
   const Intro = styled(Typography)(({ theme }) => ({
-    color: "white",
+    color: "#fff",
     textAlign: "center",
 
     [theme.breakpoints.down("md")]: {
