@@ -11,6 +11,7 @@ import Skills from "./component/constant/Skills";
 import About from "./component/constant/About";
 import Footer from "./component/constant/Footer";
 import Stack from "./component/constant/Stack";
+import Project from "./component/github/Project";
 
 function App() {
   const darkTheme = createTheme({});
@@ -22,11 +23,12 @@ function App() {
         <Presentation />
 
         <ThemeProvider theme={darkTheme}>
+          <Stack />
           <About />
           <Footer />
-          <Stack />
         </ThemeProvider>
       </section>
+      {/* <Project/> */}
     </>
   );
 }

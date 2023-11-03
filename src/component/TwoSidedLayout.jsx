@@ -80,7 +80,7 @@ export default function TwoSidedLayout({
               alignSelf: "initial",
               flexGrow: 1,
               "--AspectRatio-maxHeight": "200px",
-              "--AspectRatio-minHeight": "700px",
+              "--AspectRatio-minHeight": "800px",
             },
             borderRadius: "sm",
             flexBasis: "50%",

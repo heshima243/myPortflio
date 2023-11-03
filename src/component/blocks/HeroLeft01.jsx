@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 export default function HeroLeft01() {
   return (
-    <TwoSidedLayout>
-      <Typography color="warning" fontSize="lg" fontWeight="lg">
+    <TwoSidedLayout >
+      <Typography color="warning" fontSize="lg" fontWeight="lg" sx={{marginTop:'5rem'}}>
         Heshima Lunyungu Julien
       </Typography>
       <Typography

@@ -3,7 +3,7 @@ import React from "react";
 import Skills from "./Skills";
 // import Testimonial from "./Testimonial";
 
-const About = () => {
+const About = ({ExperienceRef}) => {
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "space-between",
@@ -44,7 +44,12 @@ const About = () => {
   }));
 
   return (
-    <Box sx={{ maxWidth: "1300px", my: 0, padding: 3, mx: "auto" }} id="about">
+    <Box
+      id="experience-container"
+      ref={ExperienceRef}
+      sx={{ maxWidth: "1300px", my: 0, padding: 3, mx: "auto" }}
+    
+    >
       <CustomTitleBox sx={{}}>
         <Typography variant="h4" sx={{ color: "#fff", textAlign: "center" }}>
           What people say about me

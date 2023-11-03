@@ -37,6 +37,14 @@ export default function Appbar(props: Props) {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+    
+  };
+
+  const handleExperienceRef = () => {
+    const experienceContainer = document.getElementById("experience-container");
+    if (experienceContainer) {
+      experienceContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   const drawer = (
@@ -92,7 +100,7 @@ export default function Appbar(props: Props) {
                 <Link   className="hover-link" style={{ color: "white", marginRight: "1rem",textDecoration:'none'}} to="#">
                   Home
                 </Link>
-                <Link style={{ color: "white", marginRight: "1rem",textDecoration:'none' }} to="#">
+                <Link onClick={handleExperienceRef} style={{ color: "white", marginRight: "1rem",textDecoration:'none' }} to="#">
                   Experience
                 </Link>
                 <Link style={{ color: "white", marginRight: "1rem",textDecoration:'none' }} to="#">

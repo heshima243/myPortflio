@@ -30,20 +30,20 @@ export default function Stack() {
   }));
 
   return (
-    <Container>
+    <Container id='experience'>
       <CustomBox sx={{ my: 5, padding: 2 }}>
         <Box sx={{ flex: 1 }}>
           <Typography
             variant="h4"
             sx={{ color: "white", textAlign: "center", mb: 3 }}
           >
-            Versality is key
+            Versality is <span style={{ color: "rgba(0,199,255,255)" }}>Key</span>
           </Typography>
           <Typography
             variant="h4"
             sx={{ color: "white", textAlign: "center", mb: 3 }}
           >
-            Here's what i can help you with
+            Here's <span style={{ color: "rgba(0,199,255,255)" }}>what i</span> can help you with
           </Typography>
         </Box>
 
