@@ -41,9 +41,7 @@ export default function UserCard() {
           <Typography fontSize="xl" fontWeight="lg">
           Heshima Lunyungu Julien
           </Typography>
-          {/* <Typography level="body-sm" fontWeight="lg" textColor="text.tertiary">
-            Senior Journalist
-          </Typography> */}
+        
           <Sheet
             sx={{
               bgcolor: "background.level1",
