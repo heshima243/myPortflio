@@ -28,6 +28,7 @@ const Intro = () => {
 
   const Intro = styled(Typography)(({ theme }) => ({
     color: "#fff",
+
     textAlign: "center",
 
     [theme.breakpoints.down("md")]: {
@@ -52,8 +53,8 @@ const Intro = () => {
           hello, I'm Heshima
         </Typography>
         <Intro variant="h4">
-          I'm <span style={{ color: "rgba(0,199,255,255)" }}> delighted  </span>  to  have you visit
-          my profile. Here's a little bit{" "}
+          I'm <span style={{ color: "rgba(0,199,255,255)" }}> delighted </span>{" "}
+          to have you visit my profile. Here's a little bit{" "}
           <span style={{ color: "rgba(0,199,255,255)" }}>about me </span>and
           what I'm up to
         </Intro>
