@@ -82,8 +82,8 @@ export default function TwoSidedLayout({
       >
         <img
         style={{objectFit:'cover'}}
-          src="https://o.remove.bg/downloads/3edf4868-6eec-4396-8a26-1b2af9c61f5d/julio-removebg-preview.png"
-          alt="https://avatars.githubusercontent.com/u/137094885?v=4"
+          src="https://lh3.googleusercontent.com/a/ACg8ocLM55Nk87v_okNbi9e7i5FqbVEexMphS3dFfkY74vMdTX9JmCopCA3mONG_QSVhrGLITTniY9BFwSz9nkODIl-eTQ=s360-c-no"
+          alt="https://lh3.googleusercontent.com/a/ACg8ocLM55Nk87v_okNbi9e7i5FqbVEexMphS3dFfkY74vMdTX9JmCopCA3mONG_QSVhrGLITTniY9BFwSz9nkODIl-eTQ=s360-c-no"
         />
       
         
