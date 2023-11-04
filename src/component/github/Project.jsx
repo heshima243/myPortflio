@@ -4,7 +4,7 @@ import axios from 'axios';
 const Project = () => {
   const [repos, setRepos] = useState([]);
 
-  const githubToken = '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';
+  const githubToken = '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';
 
   useEffect(() => {
     axios

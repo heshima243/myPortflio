@@ -12,6 +12,7 @@ import About from "./component/constant/About";
 import Footer from "./component/constant/Footer";
 import Stack from "./component/constant/Stack";
 import Project from "./component/github/Project";
+import RecentProject from "./component/cardProject/RecentProject";
 
 function App() {
   const darkTheme = createTheme({});
@@ -21,6 +22,7 @@ function App() {
       <section className="App-header">
         <Appbar />
         <Presentation />
+        <RecentProject />
 
         <ThemeProvider theme={darkTheme}>
           <Stack />
