@@ -42,7 +42,7 @@ export default function Footer({ ContactRef }) {
         justifyContent: "space-around",
       }}
     >
-      <Box sx={{ display: "flex",textDecoration:'none', flexDirection: "column" }}>
+      <Box sx={{ display: "flex",flexDirection: "column" }}>
         <Typography variant="body1" sx={{ color: "#7B89AB", mb: 2 }}>
           Pages
         </Typography>
@@ -50,7 +50,7 @@ export default function Footer({ ContactRef }) {
           onClick={handleHomeRef}
           className="link"
           to="/"
-          style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
+          style={{ color: "white",textDecoration:'none', margin: "0.5rem", cursor: "pointer" }}
         >
           Home
         </Link>
@@ -58,7 +58,7 @@ export default function Footer({ ContactRef }) {
           onClick={handleExperienceRef}
           className="link"
           to="#"
-          style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
+          style={{ color: "white",textDecoration:'none', margin: "0.5rem", cursor: "pointer" }}
         >
           Experience
         </Link>
@@ -66,7 +66,7 @@ export default function Footer({ ContactRef }) {
           onClick={handleSkillsRef}
           className="link"
           to="#"
-          style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
+          style={{ color: "white",textDecoration:'none', margin: "0.5rem", cursor: "pointer" }}
         >
           Skills
         </Link>
