@@ -16,8 +16,8 @@ export const icons = [
   },
   {
     id: 3,
-    name: "SASS",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+    name: "Mui",
+    src: "https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1626-on580ia9.png",
   },
   {
     id: 4,

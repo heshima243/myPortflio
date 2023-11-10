@@ -13,6 +13,7 @@ import Footer from "./component/constant/Footer";
 import Stack from "./component/constant/Stack";
 import Project from "./component/github/Project";
 import RecentProject from "./component/cardProject/RecentProject";
+import AppFooter from "./component/blocks/AppFooter";
 
 function App() {
   const darkTheme = createTheme({});
@@ -29,7 +30,9 @@ function App() {
           <About />
           <Footer />
         </ThemeProvider>
+        <AppFooter/>
       </section>
+   
       {/* <Project/> */}
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "antd";
-import { Container, Box, useMediaQuery, useTheme } from "@mui/material";
+import { Container, Box, useMediaQuery, useTheme, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 
@@ -15,7 +15,7 @@ const images = [
   {
     imgPath:
       "https://i.pinimg.com/736x/3f/4b/97/3f4b977239687f87feabda7add3ca0f5.jpg",
-    title: "WeatherApp using API",
+    title: "WeatherApp using API weatherStack",
     description:'https://heshima-meteo.netlify.app/'
   },
   {
@@ -33,7 +33,7 @@ const images = [
  
 ];
 
-export default function CardProject() {
+export default function CardProject({SkillsRef}) {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -67,6 +67,8 @@ export default function CardProject() {
 
 
       </Box>
+      <Typography   id="skills-container"
+      ref={SkillsRef} variant="h1" color="initial"></Typography>
     </Container>
   );
 }

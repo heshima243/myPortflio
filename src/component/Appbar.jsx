@@ -25,11 +25,42 @@ interface Props {
   window?: () => Window;
 }
 
-
-
-  
 const drawerWidth = 240;
-const navItems = ["Home", "Experience", "Contact"];
+
+const handleExperienceRef = () => {
+  const experienceContainer = document.getElementById("experience-container");
+  if (experienceContainer) {
+    experienceContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
+const handleHomeRef = () => {
+  const homeContainer = document.getElementById("home-container");
+  if (homeContainer) {
+    homeContainer.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const handleContactRef = () => {
+  const contactContainer = document.getElementById("contact-container");
+  if (contactContainer) {
+    contactContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
+const handleSkillsRef = () => {
+  const skillsContainer = document.getElementById("skills-container");
+  if (skillsContainer) {
+    skillsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
+const navItems = [
+  { label: "Home", onClick: handleHomeRef, to: "/" },
+  { label: "Experience", onClick: handleExperienceRef, to: "#" },
+  { label: "Skills", onClick: handleSkillsRef, to: "#" },
+  { label: "Contact", onClick: handleContactRef, to: "#" },
+];
 
 export default function Appbar(props: Props) {
   const { window } = props;
@@ -37,27 +68,30 @@ export default function Appbar(props: Props) {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
-    
-  };
-
-  const handleExperienceRef = () => {
-    const experienceContainer = document.getElementById("experience-container");
-    if (experienceContainer) {
-      experienceContainer.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
   };
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2,fontWeight:'bold'}}>
+      <Typography variant="h6" sx={{ my: 2, fontWeight: "bold" }}>
         HESHIMA
       </Typography>
       <Divider />
-      <List sx={{backgroundColor: " #282c34",color:'#fff',fontWeight:'bold'}}>
+      <List
+        sx={{ backgroundColor: " #282c34", color: "#fff", fontWeight: "bold" }}
+      >
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center",'&:hover':{backgroundColor:'#212121',transitionDelay:'0.3s'} }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.label} disablePadding>
+            <ListItemButton
+              sx={{
+                textAlign: "center",
+                "&:hover": {
+                  backgroundColor: "#212121",
+                  transitionDelay: "0.3s",
+                },
+              }}
+            >
+  
+              <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -69,9 +103,9 @@ export default function Appbar(props: Props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box id="home-container" sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: ' #282c34' }}>
+      <AppBar component="nav" sx={{ backgroundColor: " #282c34" }}>
         <Container>
           <Toolbar>
             <IconButton
@@ -96,14 +130,51 @@ export default function Appbar(props: Props) {
               Heshima Lunyungu Julien
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              <div style={{fontWeight:'bold'}}>
-                <Link   className="hover-link" style={{ color: "white", marginRight: "1rem",textDecoration:'none'}} to="#">
+              <div style={{ fontWeight: "bold" }}>
+                <Link
+                  onClick={handleHomeRef}
+                  style={{
+                    color: "white",
+                    marginRight: "1rem",
+                    textDecoration: "none",
+                  }}
+                  to="/"
+                  exact
+                >
                   Home
                 </Link>
-                <Link onClick={handleExperienceRef} style={{ color: "white", marginRight: "1rem",textDecoration:'none' }} to="#">
+                <Link
+                  onClick={handleExperienceRef}
+                  style={{
+                    color: "white",
+                    marginRight: "1rem",
+                    textDecoration: "none",
+                  }}
+                  to="#"
+                  exact
+                >
                   Experience
                 </Link>
-                <Link style={{ color: "white", marginRight: "1rem",textDecoration:'none' }} to="#">
+                <Link
+                  onClick={handleSkillsRef}
+                  style={{
+                    color: "white",
+                    marginRight: "1rem",
+                    textDecoration: "none",
+                  }}
+                  to="#"
+                >
+                  Skills
+                </Link>
+                <Link
+                  onClick={handleContactRef}
+                  style={{
+                    color: "white",
+                    marginRight: "1rem",
+                    textDecoration: "none",
+                  }}
+                  to="#"
+                >
                   Contact
                 </Link>
               </div>

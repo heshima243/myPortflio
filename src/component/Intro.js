@@ -42,9 +42,6 @@ const Intro = () => {
   return (
     <Box marginTop="5rem">
       <Container>
-        {/* <Typography variant="h5" align="center" color="inherit" sx={{alignItems:'justify',alignContent:'justify'}}>
-          {displayedText}
-        </Typography> */}
         <Typography
           variant="h6"
           sx={{ color: "#fff", textAlign: "center" }}

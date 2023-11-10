@@ -3,7 +3,7 @@ import React from "react";
 import Skills from "./Skills";
 // import Testimonial from "./Testimonial";
 
-const About = ({ExperienceRef}) => {
+const About = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "space-between",
@@ -45,8 +45,7 @@ const About = ({ExperienceRef}) => {
 
   return (
     <Box
-      id="experience-container"
-      ref={ExperienceRef}
+    
       sx={{ maxWidth: "1300px", my: 0, padding: 3, mx: "auto" }}
     
     >
@@ -66,8 +65,6 @@ const About = ({ExperienceRef}) => {
       </CustomTitleBox>
 
       <CustomBox sx={{ my: 7 }}>
-        <Skills />
-        <Skills />
         <Skills />
       </CustomBox>
 

@@ -9,8 +9,13 @@ import { Link } from "react-router-dom";
 
 export default function HeroLeft01() {
   return (
-    <TwoSidedLayout >
-      <Typography color="warning" fontSize="lg" fontWeight="lg" sx={{marginTop:'5rem'}}>
+    <TwoSidedLayout>
+      <Typography
+        color="warning"
+        fontSize="lg"
+        fontWeight="lg"
+        sx={{ marginTop: "5rem" }}
+      >
         Heshima Lunyungu Julien
       </Typography>
       <Typography
@@ -18,10 +23,16 @@ export default function HeroLeft01() {
         fontWeight="xl"
         fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
       >
-        I'm always <span style={{color:'orange'}}> happy</span> to connect with new <span style={{color:'orange'}}>people </span> and explore
+        I'm always <span style={{ color: "orange" }}> happy</span> to connect
+        with new <span style={{ color: "orange" }}>people </span> and explore
         new opportunitie
       </Typography>
-      <Typography fontSize="lg" fontWeight="lg"  sx={{color: '#333'}} lineHeight="lg">
+      <Typography
+        fontSize="lg"
+        fontWeight="lg"
+        sx={{ color: "#333" }}
+        lineHeight="lg"
+      >
         I'm on a journey to become a full-stack JavaScript developer
       </Typography>
       <Button
@@ -33,18 +44,14 @@ export default function HeroLeft01() {
         Get Started
       </Button>
       <Typography>
-        Visit my Github{" "}
-        <Link
+        Follow me on Github <Link
           style={{ textDecoration: "none", color: "blue" }}
           to="https://github.com/heshima243"
           target="_blank"
           fontWeight="lg"
-        >
-          here
+        > here
         </Link>
       </Typography>
-
-    
     </TwoSidedLayout>
   );
 }

@@ -3,9 +3,35 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer({ ContactRef }) {
+  const handleExperienceRef = () => {
+    const experienceContainer = document.getElementById("experience-container");
+    if (experienceContainer) {
+      experienceContainer.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  const handleHomeRef = () => {
+    const homeContainer = document.getElementById("home-container");
+    if (homeContainer) {
+      homeContainer.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleSkillsRef = () => {
+    const skillsContainer = document.getElementById("skills-container");
+    if (skillsContainer) {
+      skillsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <Box
+      id="contact-container"
+      ref={ContactRef}
       sx={{
         maxWidth: "110ppx",
         backgroundColor: "black",
@@ -21,25 +47,28 @@ export default function Footer() {
           Pages
         </Typography>
         <Link
+          onClick={handleHomeRef}
           className="link"
-          to="home"
+          to="/"
           style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
         >
           Home
         </Link>
         <Link
+          onClick={handleExperienceRef}
           className="link"
-          to="experience"
+          to="#"
           style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
         >
           Experience
         </Link>
         <Link
+          onClick={handleSkillsRef}
           className="link"
-          to="about"
+          to="#"
           style={{ color: "white", margin: "0.5rem", cursor: "pointer" }}
         >
-          About
+          Skills
         </Link>
       </Box>
 
@@ -48,21 +77,21 @@ export default function Footer() {
           SOCIAL
         </Typography>
 
-        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
-          <GitHub sx={{ mr:2, color: "#fff" }} />
-          <Typography variant="body2" sx={{color:'white',my:1}} >
+        <Box component={Link} target="_blank" to='https://github.com/heshima243' sx={{ display: "flex",textDecoration:'none', alignItems: "center", cursor: "pointer" }}>
+          <GitHub sx={{ mr: 2, color: "#fff" }} />
+          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             Github
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
-          <Email sx={{ mr:2, color: "#fff" }} />
-          <Typography variant="body2" sx={{color:'white',my:1}} >
+        <Box component={Link} target="_blank" to='https://mail.google.com/mail/u/0/#inbox?compose=new' sx={{ display: "flex",textDecoration:'none', alignItems: "center", cursor: "pointer" }}>
+          <Email sx={{ mr: 2, color: "#fff" }} />
+          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             Email
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
-          <LinkedIn sx={{ mr:2, color: "#fff" }} />
-          <Typography variant="body2" sx={{color:'white',my:1}} >
+        <Box component={Link} target="_blank" to='https://www.linkedin.com/in/julien-heshimaofficial-063748285/' sx={{ display: "flex",textDecoration:'none', alignItems: "center", cursor: "pointer" }}>
+          <LinkedIn sx={{ mr: 2, color: "#fff" }} />
+          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             Linkdin
           </Typography>
         </Box>
