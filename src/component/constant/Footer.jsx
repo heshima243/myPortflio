@@ -42,7 +42,7 @@ export default function Footer({ ContactRef }) {
         justifyContent: "space-around",
       }}
     >
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Box sx={{ display: "flex",textDecoration:'none', flexDirection: "column" }}>
         <Typography variant="body1" sx={{ color: "#7B89AB", mb: 2 }}>
           Pages
         </Typography>
