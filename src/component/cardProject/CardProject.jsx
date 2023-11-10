@@ -15,7 +15,7 @@ const images = [
   {
     imgPath:
       "https://i.pinimg.com/736x/3f/4b/97/3f4b977239687f87feabda7add3ca0f5.jpg",
-    title: "WeatherApp using API weatherStack",
+    title: "A WeatherApp using the weatherStack API",
     description:'https://heshima-meteo.netlify.app/'
   },
   {
@@ -27,8 +27,14 @@ const images = [
   {
     imgPath:
       'https://i.pinimg.com/736x/33/d2/d0/33d2d0e152c65a19081b3928b442dc7e.jpg',
-    title: "Fake-Store connected to API fake-store",
+    title: "Integration of a phony store with the fake-store API",
     description:'https://heshima-store-online.vercel.app'
+  },
+  {
+    imgPath:
+      'https://i.pinimg.com/736x/c1/30/c1/c130c14e7e660837cf603f5c344c46c2.jpg',
+    title: "Store Dashboard Interface",
+    description:'https://dashboarb-heshima.vercel.app/'
   },
  
 ];
