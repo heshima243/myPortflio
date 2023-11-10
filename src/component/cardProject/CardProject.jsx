@@ -36,6 +36,12 @@ const images = [
     title: "Store Dashboard Interface",
     description:'https://dashboarb-heshima.vercel.app/'
   },
+  {
+    imgPath:
+      'https://i.pinimg.com/736x/37/ee/89/37ee8927aebb2076f0b94a2e6e16e493.jpg',
+    title: "Integration of Movie data base with the imdb API",
+    description:'https://heshima-movie.netlify.app/'
+  },
  
 ];
 
