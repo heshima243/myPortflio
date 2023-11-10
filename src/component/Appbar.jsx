@@ -39,6 +39,7 @@ const handleHomeRef = () => {
   if (homeContainer) {
     homeContainer.scrollIntoView({ behavior: "smooth" });
   }
+
 };
 
 const handleContactRef = () => {
@@ -82,6 +83,9 @@ export default function Appbar(props: Props) {
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
             <ListItemButton
+           
+           
+            onClick={item.onClick}
               sx={{
                 textAlign: "center",
                 "&:hover": {
